@@ -126,3 +126,24 @@ document.querySelectorAll(".vehicle-stage").forEach((carousel) => {
     pointerStart = null;
   });
 });
+
+// FAQ dialog: fallbacks for browsers without Invoker Commands or <dialog closedby>.
+if (!("commandForElement" in HTMLButtonElement.prototype)) {
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest('button[command="show-modal"][commandfor]');
+    document.getElementById(button?.getAttribute("commandfor"))?.showModal();
+  });
+}
+
+if (!("closedBy" in HTMLDialogElement.prototype)) {
+  // Test the pointer position, not event.target: the dialog is also the target for its own padding.
+  const outside = (event, dialog) => {
+    const rect = dialog.getBoundingClientRect();
+    return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+  };
+  for (const dialog of document.querySelectorAll('dialog[closedby="any"]')) {
+    let pressedOutside = false;
+    dialog.addEventListener("pointerdown", (event) => { pressedOutside = outside(event, dialog); });
+    dialog.addEventListener("pointerup", (event) => { if (pressedOutside && outside(event, dialog)) dialog.close(); });
+  }
+}

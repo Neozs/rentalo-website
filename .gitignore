@@ -1,0 +1,7 @@
+# Original full-size photos, kept on your computer only (not published)
+source-images/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini

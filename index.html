@@ -12,26 +12,26 @@
     <meta property="og:title" content="Car Hire in Melbourne — Rentalo" />
     <meta property="og:description" content="Monthly car hire in Melbourne with insurance, registration and servicing included. Message Rentalo on WhatsApp for price and availability." />
     <meta property="og:url" content="https://neozs.github.io/rentalo-website/" />
-    <meta property="og:image" content="https://neozs.github.io/rentalo-website/og-image.jpg" />
+    <meta property="og:image" content="https://neozs.github.io/rentalo-website/assets/img/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Rentalo car and e-bike hire in Melbourne and Adelaide" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://neozs.github.io/rentalo-website/" />
-    <link rel="icon" href="RentalogoCircleWhiteBG.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/img/brand/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=11" />
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"AutoRental","name":"Rentalo","description":"Monthly car hire in Melbourne and e-bike hire in Melbourne and Adelaide.","telephone":"+61426760173","url":"https://neozs.github.io/rentalo-website/","logo":"https://neozs.github.io/rentalo-website/Logo.png","areaServed":[{"@type":"City","name":"Melbourne"},{"@type":"City","name":"Adelaide"}]}
+    {"@context":"https://schema.org","@type":"AutoRental","name":"Rentalo","description":"Monthly car hire in Melbourne and e-bike hire in Melbourne and Adelaide.","telephone":"+61426760173","url":"https://neozs.github.io/rentalo-website/","logo":"https://neozs.github.io/rentalo-website/assets/img/brand/logo.png","areaServed":[{"@type":"City","name":"Melbourne"},{"@type":"City","name":"Adelaide"}]}
     </script>
   </head>
   <body data-page="cars">
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="index.html" aria-label="Rentalo home">
-          <span class="brand-mark"><img src="Logo.png" alt="" /></span>
+          <span class="brand-mark"><img src="assets/img/brand/logo.png" alt="" width="38" height="38" /></span>
           <span class="brand-name">Rentalo<span class="brand-period">.</span></span>
         </a>
 
@@ -40,20 +40,10 @@
           <a class="nav-link" href="ebikes.html">E-bikes</a>
         </nav>
 
-        <details class="contact-menu">
-          <summary class="contact-menu-trigger" aria-label="Choose a Rentalo WhatsApp contact">
-            <span>Contact</span>
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
-            <path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M9 8.4c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.5c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.3.2.5.2.7-.1l.7-.8c.2-.2.4-.3.7-.2l1.5.7c.3.1.4.3.4.5 0 .4-.2 1.2-.8 1.6-.5.4-1.1.6-1.9.4-1-.2-2.3-.8-3.6-2-1.1-1-1.9-2.3-2.1-3.2-.2-.8 0-1.4.4-1.9.3-.4.7-.6.9-.6Z" fill="currentColor" />
-            </svg>
-          </summary>
-          <div class="contact-menu-panel">
-            <p class="contact-menu-title">Talk to our team</p>
-            <a href="https://wa.me/61426760173?text=Hi%20Juan%2C%20I%E2%80%99m%20interested%20in%20renting%20from%20Rentalo.%20Could%20you%20help%20me%20with%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer">Juan Osorio <span>WhatsApp</span></a>
-            <a href="https://wa.me/61426869382?text=Hi%20Natalia%2C%20I%E2%80%99m%20interested%20in%20renting%20from%20Rentalo.%20Could%20you%20help%20me%20with%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer">Natalia Osorio <span>WhatsApp</span></a>
-          </div>
-        </details>
+        <button class="header-action" type="button" command="show-modal" commandfor="faq">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16.9" r=".9" fill="currentColor"/></svg>
+          <span>FAQ</span>
+        </button>
       </header>
 
       <main class="hero" id="top">
@@ -74,7 +64,7 @@
             <div class="rental-details-panel">
               <div class="rental-panel-meta">
                 <div class="rental-meta-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 3v4M16 3v4M4 10h16M8 14h3M8 17h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><small>Minimum rental</small><strong>1 Month</strong></span></div>
-                <div class="rental-meta-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v5c0 5.2-3.3 8.4-8 10-4.7-1.6-8-4.8-8-10V6l8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><small>Security deposit</small><strong>Refundable</strong></span></div>
+                <div class="rental-meta-item"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3 20 6v5c0 5.2-3.3 8.4-8 10-4.7-1.6-8-4.8-8-10V6l8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><small>Security deposit</small><strong>$500, refundable</strong></span></div>
               </div>
               <section class="rental-panel-section"><h2>Included with our cars</h2><ul class="rental-detail-list">
                 <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a5 5 0 0 0-6.5 6.5L3.5 17.5a2.1 2.1 0 0 0 3 3l4.7-4.7a5 5 0 0 0 6.5-6.5L14.4 12l-2.5-2.5 2.8-3.2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Maintenance and servicing</li>
@@ -100,13 +90,13 @@
           <div class="carousel-viewport" data-carousel-viewport>
             <div class="carousel-track" data-carousel-track>
               <div class="vehicle-slide" role="group" aria-roledescription="slide" aria-label="1 of 3: Mazda 2" data-label="Mazda 2" data-inquiry-name="Silver 2016 Mazda 2">
-                <img class="vehicle-image" src="Mazda2NOBG.webp" alt="Silver Mazda 2 available for hire through Rentalo" fetchpriority="high" draggable="false" />
+                <img class="vehicle-image" src="assets/img/cars/mazda-2-silver.webp" alt="Silver Mazda 2 available for hire through Rentalo" width="1200" height="800" fetchpriority="high" draggable="false" />
               </div>
               <div class="vehicle-slide" role="group" aria-roledescription="slide" aria-label="2 of 3: White Hyundai" data-label="Hyundai Accent" data-inquiry-name="White 2016 Hyundai">
-                <img class="vehicle-image" src="HyundaiWhiteNOBG.webp" alt="White Hyundai available for hire through Rentalo" loading="eager" draggable="false" />
+                <img class="vehicle-image" src="assets/img/cars/hyundai-accent-white.webp" alt="White Hyundai available for hire through Rentalo" width="1200" height="800" fetchpriority="low" draggable="false" />
               </div>
               <div class="vehicle-slide" role="group" aria-roledescription="slide" aria-label="3 of 3: Black Hyundai" data-label="Hyundai Accent" data-inquiry-name="Black 2016 Hyundai">
-                <img class="vehicle-image" src="HyundaiBlackNOBG.webp" alt="Black Hyundai available for hire through Rentalo" loading="eager" draggable="false" />
+                <img class="vehicle-image" src="assets/img/cars/hyundai-accent-black.webp" alt="Black Hyundai available for hire through Rentalo" width="1200" height="800" fetchpriority="low" draggable="false" />
               </div>
             </div>
           </div>
@@ -124,6 +114,60 @@
         </figure>
       </main>
     </div>
-    <script src="app.js?v=4" defer></script>
+
+    <dialog class="faq-dialog" id="faq" closedby="any" aria-labelledby="faq-title">
+      <div class="faq-head">
+        <h2 id="faq-title">Car hire questions</h2>
+        <form method="dialog">
+          <button class="faq-close" type="submit" aria-label="Close" autofocus><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+        </form>
+      </div>
+      <div class="faq-body">
+        <div class="faq-list">
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>From $180 per week. Message us for the current price of each car.</p>
+        </details>
+        <details>
+          <summary>What is the minimum rental?</summary>
+          <p>1 month.</p>
+        </details>
+        <details>
+          <summary>Is there a bond?</summary>
+          <p>Yes, $500. It’s refunded within 10 business days after you return the car.</p>
+        </details>
+        <details>
+          <summary>What is the insurance excess?</summary>
+          <p>Comprehensive insurance is included. If there’s an accident, the excess is $1,200.</p>
+        </details>
+        <details>
+          <summary>Is there a kilometre limit?</summary>
+          <p>No, kilometres are unlimited.</p>
+        </details>
+        <details>
+          <summary>Where do I pick up the car?</summary>
+          <p>Southbank, Melbourne.</p>
+        </details>
+        <details>
+          <summary>How soon can I start?</summary>
+          <p>As soon as the day after you apply.</p>
+        </details>
+        <details>
+          <summary>Can I use the car for Uber, DiDi or delivery work?</summary>
+          <p>Yes, rideshare and delivery work are allowed.</p>
+        </details>
+        <details>
+          <summary>What if the car breaks down?</summary>
+          <p>Message us on WhatsApp straight away. Servicing and maintenance are included, so we organise and cover repairs from normal wear and tear and get you back on the road as quickly as possible.</p>
+        </details>
+        </div>
+        <div class="faq-contact">
+          <p class="faq-contact-title">Still have a question? Talk to our team</p>
+          <a href="https://wa.me/61426760173?text=Hi%20Juan%2C%20I%E2%80%99m%20interested%20in%20renting%20from%20Rentalo.%20Could%20you%20help%20me%20with%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer">Juan Osorio <span>WhatsApp</span></a>
+          <a href="https://wa.me/61426869382?text=Hi%20Natalia%2C%20I%E2%80%99m%20interested%20in%20renting%20from%20Rentalo.%20Could%20you%20help%20me%20with%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer">Natalia Osorio <span>WhatsApp</span></a>
+        </div>
+      </div>
+    </dialog>
+    <script src="assets/js/app.js?v=5" defer></script>
   </body>
 </html>
