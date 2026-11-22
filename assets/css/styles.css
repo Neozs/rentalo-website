@@ -257,7 +257,8 @@ dialog::backdrop { overflow: hidden; overscroll-behavior: contain; background: r
 .carousel-viewport:active { cursor: grabbing; }
 .carousel-track { display: flex; width: 100%; height: 100%; transform: translateX(0); }
 .carousel-track.is-animated { transition: transform 560ms cubic-bezier(.22,.72,.18,1); }
-.vehicle-slide { display: grid; flex: 0 0 100%; width: 100%; height: 100%; min-width: 0; place-items: center; }
+/* A fixed 1fr cell gives the image a definite box, so object-fit: contain shrinks it instead of letting it overflow and get clipped */
+.vehicle-slide { display: grid; flex: 0 0 100%; grid-template: minmax(0, 1fr) / minmax(0, 1fr); width: 100%; height: 100%; min-width: 0; place-items: center; }
 .vehicle-slide[data-label^="Hyundai"] { --image-scale: 1; --image-y: 0%; }
 .ebike-stage .vehicle-image { --image-scale: .97; }
 .vehicle-image { display: block; width: 90%; height: 90%; max-width: 100%; max-height: 100%; object-fit: contain; transform: translateY(var(--image-y, 0%)) scale(var(--image-scale, 1)); user-select: none; transition: transform 700ms cubic-bezier(.2,.7,.2,1); }
